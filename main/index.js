@@ -10,8 +10,7 @@ form.addEventListener('submit', (event) => {
   event.preventDefault();
   const title = document.getElementById('title').value;
   const author = document.getElementById('author').value;
-  const id = Date();
-  const book = new Book(title, author, id);
+  const book = new Book(title, author);
   book.newBook();
   if (title && author) {
     displayBooks(book.title, book.author, book.id);

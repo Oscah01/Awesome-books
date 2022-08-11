@@ -10,8 +10,7 @@ form.addEventListener('submit', (event) => {
   event.preventDefault();
   const title = document.getElementById('title').value;
   const author = document.getElementById('author').value;
-  const id = Date();
-  const book = new Book(title, author, id);
+  const book = new Book(title, author);
   book.newBook();
   if (title && author) {
     displayBooks(book.title, book.author, book.id);
@@ -26,9 +25,6 @@ const contacts = document.getElementById('contacts');
 const listLink1 = document.getElementById('con-link1');
 const listLink2 = document.getElementById('con-link2');
 const listLink3 = document.getElementById('con-link3');
-const date = document.getElementById('date');
-const shownDate = [Date().split(' ').splice(1, 4).join(' ')];
-date.append(shownDate);
 
 listLink1.addEventListener('click', () => {
   list.classList.remove('show');
