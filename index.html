@@ -11,29 +11,24 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
   <main>
-    <header>
-      <span id = "date"></span>
-    </header>
     <section id="all-book" class = "show">
-      <h2>Awesome books</h2>
+      <h1>Awesome books</h1>
       <div class="book-table">
         <ul class="all-book"></ul>
       </div>
     </section>
+    <hr>
     <section class="form-section" id="add">
-      <div id="form">
+      <h2>Add a new book</h2>
         <form id="formAdd">
           <input type="text" name="title" id="title" class="input" placeholder="Title" required>
-          <p class="error"></p> 
-          <input type="text" name="author" id="author" class="input" placeholder="Author" required> <br><br>
+          <input type="text" name="author" id="author" class="input" placeholder="Author" required>
           <button type="submit" class="btn">Add</button>
         </form>
-      </div>
     </section>
   </main> 
-    <script type="module" src="./main/index.js"></script>
+    <script type="module" src="./app.js"></script>
 </body>
 </html>
